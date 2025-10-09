@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+    background-color: pink;
+    
+}
+
+/* .etch {
+    
+    background-color: green;
+    border-color2: black;
+    height: 50px;
+    width: 50px;
+} */
