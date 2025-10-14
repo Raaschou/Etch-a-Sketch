@@ -5,7 +5,6 @@ function createGrid() {
             const etchASketchDiv = document.createElement("div");
             etchASketchDiv.className = "etch";
             container.appendChild(etchASketchDiv);
-            etchASketchDiv.textContent = `${i+j}`;
         } 
     }
 }
@@ -14,7 +13,7 @@ function increaseGrey() {
     // Needs refactoring to just add flat int to rgb value
     const etchBoxes = document.querySelectorAll(".etch");
     etchBoxes.forEach(etchBox =>{
-    etchBox.addEventListener("click", () => {
+    etchBox.addEventListener("mousedown", () => {
         bgColor = window.getComputedStyle(etchBox).backgroundColor;
         
         console.log(bgColor)
