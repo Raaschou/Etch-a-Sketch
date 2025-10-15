@@ -44,17 +44,21 @@ function increaseGrey() {
 function sliderNumber() {
     //const sliderNum = document.getElementById("myRange").value;
     const slider = document.getElementById("myRange");
-    console.log(`${slider.value}`)
-    const numDiv = document.createElement("div")
-    numDiv.textContent = `${slider.value}`;
-    slider.appendChild(numDiv)
-}
+    const output = document.getElementById(".slidecontainer");
+    output.textContent = slider.value;
+    slider.oninput = function() {
+        output.textContent = this.value;
+    }
+
+    console.log(output.value);
+    slider.appendChild(output);
+    }
 
 
 createGrid();
 increaseGrey();
+
 sliderNumber();
- 
 
 
 
