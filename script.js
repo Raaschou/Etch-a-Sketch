@@ -38,13 +38,22 @@ function increaseGrey() {
 
         console.log(`Setting color to ${newColor}`);
         etchBox.style.backgroundColor = newColor;
-})});  
+    })});  
+}
+
+function sliderNumber() {
+    //const sliderNum = document.getElementById("myRange").value;
+    const slider = document.getElementById("myRange");
+    console.log(`${slider.value}`)
+    const numDiv = document.createElement("div")
+    numDiv.textContent = `${slider.value}`;
+    slider.appendChild(numDiv)
 }
 
 
 createGrid();
 increaseGrey();
-
+sliderNumber();
  
 
 
